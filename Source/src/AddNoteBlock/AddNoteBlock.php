@@ -1,5 +1,4 @@
 <?php
-
 namespace AddNoteBlock;
 
 use pocketmine\plugin\PluginBase;
@@ -8,7 +7,6 @@ use pocketmine\block\Block;
 use AddNoteBlock\block\NoteBlock;
 
 class AddNoteBlock extends PluginBase{
-
 	public function onLoad(){
 		$this->registerBlock(NoteBlock::NOTEBLOCK, NoteBlock::class);
  	}
