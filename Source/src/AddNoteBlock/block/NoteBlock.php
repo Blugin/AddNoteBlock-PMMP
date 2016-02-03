@@ -67,7 +67,8 @@ class NoteBlock extends Solid{
 	}
 
 	public function __construct($meta = 0){
-		$this->meta = $meta % 25;
+		$this->id = (int) $this->id;
+		$this->meta = (int) $meta % 25;
 	}
 
 	public function canBeActivated(){
